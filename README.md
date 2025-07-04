@@ -39,9 +39,12 @@ To assist non-technical, rural, or low-literacy users in completing complex form
 ---
 
 ## 📦 Folder Structure
-<pre> ``` voice-form-assistant/
-├── frontend/     # React app for user interface
-└── backend/      # FastAPI backend for AI and form processing ``` </pre>
+
+```
+ voice-form-assistant/
+  ├── frontend/ # React app for user interface
+  └── backend/ # FastAPI backend for AI and form processing
+```
 
 
 ---
@@ -52,58 +55,64 @@ To assist non-technical, rural, or low-literacy users in completing complex form
 ```bash
 git clone https://github.com/harshnimsatkar/voice-form-assistant.git
 cd voice-form-assistant
+```
 
 ---
 
 ### 2. Backend Setup (FastAPI)
 cd backend
+
 python -m venv venv
+
 venv\Scripts\activate  # Windows
+
 pip install -r requirements.txt
+
 uvicorn main:app --reload
 
 ---
 
 ### 3. Frontend Setup (React)
 cd ../frontend
+
 npm install
+
 npm start
 
 ---
+
 ## 🛣️ Future Upgrades
-🔐 Authentication for officers/kiosk users
 
-📎 Auto-scan uploaded Aadhaar or PAN using OCR
-
-🧾 Document checklist based on form type
-
-📱 Android app version (PWA or React Native)
-
-🗃️ Form type selector (Ration, WCL, Bank, etc.)
+- 🔐 Authentication for officers/kiosk users
+- 📎 Auto-scan uploaded Aadhaar or PAN using OCR
+- 🧾 Document checklist based on form type
+- 📱 Android app version (PWA or React Native)
+- 🗃️ Form type selector (Ration, WCL, Bank, etc.)
 
 ---
 
 ## 🤝 Contributing
+
 Pull requests are welcome. Please open an issue to discuss changes or ideas first.
 
 ---
 
 ## 📃 License
+
 MIT License
 
 ---
 
 ## 🙏 Acknowledgements
-OpenAI
-Hugging Face
-Whisper by OpenAI
-AI4Bharat IndicTrans2
-React
-FastAPI
+
+- OpenAI
+- Hugging Face
+- Whisper by OpenAI
+- AI4Bharat IndicTrans2
+- React
+- FastAPI
 
 
-
----
 
 
 
