@@ -1,0 +1,16 @@
+# Backend virtual environment
+backend/venv/
+
+# Frontend node modules
+frontend/node_modules/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python/React cache
+__pycache__/
+*.log
+
+# Optional: Ignore filled PDFs
+*.pdf
