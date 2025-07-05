@@ -6,7 +6,30 @@ A full-stack AI assistant that enables users to fill out official government for
 
 ## 🔍 Project Objective
 
-To assist non-technical, rural, or low-literacy users in completing complex forms with ease using AI tools and natural language input.
+To assist non-technical, rural, or low-literacy users in completing complex government forms (WCL, Ration Card, Banking, etc.) using AI-powered voice and text inputs in local languages.
+
+---
+
+## 📍 Use Case
+
+This project addresses the real-world accessibility gap for users unfamiliar with English typing or digital forms — making it ideal for use in:
+
+- 🏛️ Government service centers and public offices (e.g., WCL, Aadhaar)
+- 📍 Rural digital seva kendras and citizen help kiosks
+- 🧓 Elderly or low-literacy users who cannot fill digital forms themselves
+- 🏦 Banking or insurance form counters in regional language areas
+
+---
+
+## 🧠 What You Can Do With It
+
+- 🎙️ Speak in Hindi, Marathi, or English and get it transcribed
+- 🌐 The app understands your speech and language automatically
+- 🧾 AI detects form fields like name, village, mobile, etc. using NER
+- 📄 It fills the original government PDF form in English
+- 📥 You download the ready-to-submit PDF
+- 🔊 (Optional) Hear instructions or share it via QR (planned Phase 6)
+
 
 ---
 
@@ -15,7 +38,7 @@ To assist non-technical, rural, or low-literacy users in completing complex form
 - 🎙️ Voice or text input in Hindi, Marathi, or English
 - 🌐 Automatic speech-to-text using Whisper API
 - 🌎 Language translation for non-English inputs
-- 🧠 AI-based form field extraction (OpenAI GPT / Hugging Face NER)
+- 🧠 AI-based form field extraction (Hugging Face multilingual NER)
 - 📄 PDF form auto-fill and export (in English only)
 - 📷 QR code generation for offline printing or sharing
 - 🗺️ Page-wise instruction generation (signature/stamp guidance)
@@ -26,15 +49,15 @@ To assist non-technical, rural, or low-literacy users in completing complex form
 
 ## 🧰 Tech Stack
 
-| Layer     | Tool/Library                            |
-|-----------|------------------------------------------|
-| Frontend  | React, Tailwind CSS, react-i18next       |
-| Backend   | FastAPI (Python)                         |
-| AI APIs   | Whisper API, OpenAI GPT-4, Hugging Face  |
-| PDF Tools | PyMuPDF, ReportLab, pdfplumber           |
-| QR Codes  | Python `qrcode`                          |
-| TTS       | gTTS / pyttsx3                           |
-| Hosting   | GitHub, Render / Vercel (optional)       |
+| Layer     | Tool/Library                                  |
+|-----------|-----------------------------------------------|
+| Frontend  | React, Tailwind CSS, react-i18next            |
+| Backend   | FastAPI (Python)                              |
+| AI APIs   | Whisper API (or Web Speech), Hugging Face NER |
+| PDF Tools | PyMuPDF, ReportLab, pdfplumber                |
+| QR Codes  | Python `qrcode`                               |
+| TTS       | gTTS / pyttsx3                                |
+| Hosting   | GitHub, Render / Vercel (optional)            |
 
 ---
 
@@ -68,7 +91,7 @@ venv\Scripts\activate  # Windows
 
 pip install -r requirements.txt
 
-uvicorn main:app --reload
+python -m uvicorn main:app --reload
 
 ---
 
