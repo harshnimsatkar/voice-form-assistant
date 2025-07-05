@@ -49,15 +49,16 @@ This project addresses the real-world accessibility gap for users unfamiliar wit
 
 ## 🧰 Tech Stack
 
-| Layer     | Tool/Library                                  |
-|-----------|-----------------------------------------------|
-| Frontend  | React, Tailwind CSS, react-i18next            |
-| Backend   | FastAPI (Python)                              |
-| AI APIs   | Whisper API (or Web Speech), Hugging Face NER |
-| PDF Tools | PyMuPDF, ReportLab, pdfplumber                |
-| QR Codes  | Python `qrcode`                               |
-| TTS       | gTTS / pyttsx3                                |
-| Hosting   | GitHub, Render / Vercel (optional)            |
+| Layer     | Tool/Library                                      |
+|-----------|---------------------------------------------------|
+| Frontend  | React, Tailwind CSS, react-i18next, Web Speech API|
+| Backend   | FastAPI (Python)                                  |
+| AI Models | Hugging Face Transformers (Multilingual NER)      |
+| PDF Tools | PyMuPDF, ReportLab, pdfplumber                    |
+| TTS       | gTTS / pyttsx3                                    |
+| QR Codes  | Python `qrcode`                                   |
+| Hosting   | GitHub (code), Render / Vercel                    |
+
 
 ---
 
@@ -128,12 +129,12 @@ MIT License
 
 ## 🙏 Acknowledgements
 
-- OpenAI
-- Hugging Face
-- Whisper by OpenAI
-- AI4Bharat IndicTrans2
+- Hugging Face Transformers (NER)
 - React
 - FastAPI
+- PyMuPDF, pdfplumber (PDF extraction and writing)
+- Tailwind CSS
+
 
 
 
